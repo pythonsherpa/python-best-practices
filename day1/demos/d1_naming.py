@@ -55,7 +55,7 @@ def convert_eur_to_usd(amount):
 
 
 # Class names (PascalCase)
-class Rectangle:
+class RectangleShape:
 
     def __init__(self, width, height):
         self.width = width
