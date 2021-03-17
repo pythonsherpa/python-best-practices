@@ -61,5 +61,5 @@ class RectangleShape:
         self.width = width
         self.height = height
 
-    def area(self):
+    def calculate_area(self):
         return self.width * self.height
