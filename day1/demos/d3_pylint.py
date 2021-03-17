@@ -2,6 +2,9 @@
 Demo of pylint. Install it first via the terminal with:
 pip install pylint
 
+Run from terminal:
+pylint day1/demos/d3_pylint.py
+
 Different types of messages :
   * (C) convention, for programming standard violation
   * (R) refactor, for bad code smell
