@@ -3,14 +3,16 @@ Demo of list comprehensions
 """
 from day1.demos.d1_naming import convert_eur_to_usd
 
+numbers = [1, 2, 3, 4, 5]
+
 numbers_squared = []
-for x in range(5):
+for x in numbers:
     numbers_squared.append(x ** 2)
 
 print(numbers_squared)
 
 # List comprehension
-numbers_squared = [x ** 2 for x in range(5)]
+numbers_squared = [x ** 2 for x in numbers]
 print(numbers_squared)
 
 
@@ -22,12 +24,12 @@ print(prices_usd)
 # Extra: dictionary comprehensions
 # Example 1
 squares = {}
-for n in range(1, 5):
+for n in numbers:
     squares[n] = n ** 2
 print(squares)  # prints {1: 1, 2: 4, 3: 9, 4: 16}
 
 # Dict comprehension
-squares = {x: x ** 2 for x in range(1, 5)}
+squares = {x: x ** 2 for x in numbers}
 print(squares)  # prints {1: 1, 2: 4, 3: 9, 4: 16}
 
 
