@@ -6,6 +6,8 @@ Demo documentation strings (docstrings)
 Based on PEP 257: https://www.python.org/dev/peps/pep-0257/
 """
 
+# Comment
+
 
 def multiply(x, y):
     """Return the product of x and y."""
