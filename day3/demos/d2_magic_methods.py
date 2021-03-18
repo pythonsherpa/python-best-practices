@@ -1,5 +1,5 @@
 """
-Demo magic methods
+Demo magic methods. Run file instead of using console.
 """
 from functools import total_ordering
 
@@ -40,4 +40,6 @@ print(account_john > account_jane)   # TypeError: '>' not supported
 # Compare equal, fix with implementing __eq__()
 print(account_john == account_jane)
 
+
+print(account_john <= account_jane)
 # Add total_ordering decorator
