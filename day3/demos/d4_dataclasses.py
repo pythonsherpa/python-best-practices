@@ -14,10 +14,10 @@ class RegularClassCustomer:
 
 
 # Example of the regular style class
-d1 = RegularClassCustomer("John Doe", "john@doe.com")
-print(d1)
-d2 = RegularClassCustomer("John Doe", "john@doe.com")
-print(d2 == d1)
+c1 = RegularClassCustomer("John Doe", "john@doe.com")
+print(c1)
+c2 = RegularClassCustomer("John Doe", "john@doe.com")
+print(c2 == c1)
 
 
 # Example dataclass
