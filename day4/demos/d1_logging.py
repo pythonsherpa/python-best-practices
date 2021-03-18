@@ -17,6 +17,8 @@ logging.basicConfig(
     filemode="a"
 )
 
+logging.warning("Program is for demo uses only")
+
 
 def main():
     logging.info("Starting the program")
