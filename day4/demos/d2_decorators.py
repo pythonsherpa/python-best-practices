@@ -39,4 +39,10 @@ def say_hello():
     print("Hello, how are you?")
 
 
+@my_decorator
+def say_goodbye():
+    print("Bye, bye!")
+
+
 say_hello()
+say_goodbye()
