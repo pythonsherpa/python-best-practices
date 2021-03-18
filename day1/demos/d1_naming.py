@@ -59,7 +59,7 @@ class RectangleShape:
 
     def __init__(self, width, length):
         self.width = width
-        self.height = length
+        self.length = length
 
     def calculate_area(self):
-        return self.width * self.height
+        return self.width * self.length
