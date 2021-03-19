@@ -21,17 +21,17 @@ with open("zen.txt", "w") as file:
 print(file.closed)
 
 
-# Demo
+# Custom context manager
 class DemoContextManager:
     def __enter__(self):
-        print("Entering")
+        print("Entering the context")
 
     def __exit__(self, *args):
-        print("Exit")
+        print("Exiting the context")
 
 
 with DemoContextManager():
-    print("In the with statement")
+    print("Hello from within the with statement")
 
 
 # Optional
@@ -48,5 +48,4 @@ def my_open(filename):
 
 
 with my_open("zen.txt") as f:
-    for line in f:
-        print(line.rstrip())
+    print(f.read())
