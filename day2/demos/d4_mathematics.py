@@ -17,7 +17,18 @@ def multiply(x, y):
 
 
 def divide(x, y):
-    return round(x / y, 1)
+    return x / y
+
+
+def round_up(x: float) -> int:
+    rounded = int(x) + int((x > 0) and (x - int(x)) > 0)
+    return rounded
+
+
+# Refactored
+def round_up(x: float) -> int:
+    import math
+    return math.ceil(x)
 
 
 def hypotenuse():
