@@ -6,7 +6,7 @@ Demo exception handling
 try:
     print(1 / 0)
 except ZeroDivisionError:
-    print('Not possible to divide by zero')
+    print("Not possible to divide by zero")
 
 
 # Ask for user input without exception handling
@@ -32,25 +32,26 @@ try:
 except ValueError:
     print("That was not a valid number")
 except ZeroDivisionError:
-    print('Not possible to divide by zero')
+    print("Not possible to divide by zero")
 
 
 # Finally
 try:
-    print("Doing some calculations....")
-    # raise ValueError
+    print(1 / 0)
+except ZeroDivisionError:
+    print("Not possible to divide by zero")
 finally:
-    print('Goodbye, world!')
+    print("Goodbye, end of the program")
 
 
 # Extra
-class NegativeNumber(Exception):
+class NegativeNumberError(Exception):
     """Custom exception for negative numbers"""
 
 
 try:
-    x = -5
-    if x < 0:
-        raise NegativeNumber
-except NegativeNumber:
-    print("Value cannot be negative")
+    number = int(input("Give a number please "))
+    if number < 0:
+        raise NegativeNumberError
+except NegativeNumberError:
+    print("Number cannot be negative")
