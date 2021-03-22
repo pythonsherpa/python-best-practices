@@ -25,9 +25,9 @@ grades = {"English": 90, "Biology": 80, "Math": 100}
 
 
 # 8 - snake_case & no abbreviation
-def convert_temperature(celcius):
+def convert_temperature(celsius):
     """Return temperature converted from Celsius to Fahrenheit"""
-    fahrenheit = (celcius * 1.8) + 32
+    fahrenheit = (celsius * 1.8) + 32
     return fahrenheit
 
 
