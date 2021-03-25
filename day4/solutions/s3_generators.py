@@ -4,7 +4,6 @@ Complete the 'countdown' function in the code snippet below.
 Use the yield keyword, so it will be a generator function.
 You can follow the example from demo quite closely.
 """
-from datetime import date, timedelta
 
 
 # Exercise
